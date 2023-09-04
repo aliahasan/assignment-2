@@ -62,8 +62,11 @@ nav {
 .icons {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 15px 30px;
+    width: 260px;
+    height: 56px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .fa-tiktok,
@@ -79,7 +82,6 @@ nav {
 }
 
 .banner {
-    border: 1px solid orange;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,9 +140,6 @@ nav {
     background-color: #4EC5F7;
 }
 
-.banner-image img {
-    width: 100%;
-}
 
 /* gamers section style from here */
 
@@ -196,4 +195,61 @@ nav {
     font-weight: 700;
     margin: 0;
     padding-top: 10px;
+}
+
+
+/* media quires for small and mobile device */
+
+@media screen and (max-width:576px) {
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 50px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .banner-section,
+    .gamers-section {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .banner {
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+    .banner-details {
+        margin-top: 40px;
+    }
+
+    .banner-image img {
+        margin-top: 20px;
+        width: 380px;
+    }
+
+    .gamers-section {
+        flex-direction: column;
+    }
+
+    .gamers-image img {
+        width: 400px;
+        margin: 20px;
+    }
+
+    .gamers-details {
+        text-align: center;
+    }
 }
